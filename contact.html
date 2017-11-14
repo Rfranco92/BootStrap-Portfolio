@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact | Ryan Franco</title>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	<title>Contact | Ryan Franco</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen">
 </head>
 <body>
 
 <nav class="navbar navbar-default">
-  <div class="container">
+      <div class="container-fluid navbar-custom">
     <div class="navbar-header">
-      	<a class="navbar-brand">Ryan Franco</a>
+      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+         <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#" id="logo">Ryan Franco</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.html">About Me</a></li>
-        <li class="active"><a href="contact.html">Contact Me<span class="sr-only">(current)</span></a></li>
-        <li><a href="Portfolio.html">Portfolio</a></li>
+      <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li class="active"><a href="contact.html">Contact</a></li><span class="pipe"></span>
+            <li><a href="portfolio.html">Portfolio</a></li><span class="pipe"></span>
+            <li><a href="index.html">About</a></li>
       </ul>
     </div>
    </div>
 </nav>
 
-<div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-8">
-        <div class="page-header">
-          <h1>Contact</h1>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-          	<form>
-  				<div class="form-group">
-    			<label for="Name">Name</label>
-    			<input type="text" class="form-control" id="Name" placeholder="John Smith" required="required">
-  				</div>
-  				<div class="form-group">
-    			<label for="E-Mail">E-Mail</label>
-    			<input type="text" class="form-control" id="E-Mail" placeholder="example@gmail.com" required="required">
-  				</div>
-  				<div class="form-group">
-  				<label for="message">Message</label>
-        		<textarea id="message" class="form-control" id="message" name="message" required="required" rows=7></textarea>
-  				</div>
-  				<div class="form-group">
-  				<button type="submit" class="btn btn-primary">Submit</button>
-  				</div>
-  			</form>
-  	       </div>
-       </div>
-      </div> 
-      <div class="col-sm-12 col-md-3">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Connect With Me</h3>
+    <div class="wrap">
+      <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <form class="contact-form">
+              <h1 class="contact-form-header">Contact</h1>
+              <hr class="contact-hr"/>
+              <div class="form-group">
+                <label class="label-name" for="name">Name</label>
+                <input type="text" id="name_input" name="user_name" />
+              </div>
+              <div class="form-group">
+                <label class="label-mail" for="mail">E-mail</label>
+                <input type="email" id="mail_input" name="user_mail" />
+              </div>
+              <div class="form-group">
+                <label class="label-msg" for="msg">Message</label><br />
+                <textarea id="msg" name="user_message_input" cols=600></textarea>
+              </div>
+              <button class="submit-btn">Submit</button>
+            </form>
           </div>
-          <div class="panel-body">
-            <a href="https://github.com/Rfranco92"><img src="assets/images/github-128.png" class="img-responsive col-xs-4" alt="GitHub" /></a>
-            <a href="https://www.linkedin.com/in/ryan-franco-b21541145/"><img src="assets/images/linkedin-128.png" class="img-responsive col-xs-4" alt="LinkedIn" /></a>
-            <a href="https://stackoverflow.com/users/8431104/ryan-franco"><img src="assets/images/stackoverflow-128.png" class="img-responsive col-xs-4" alt="Stack Overflow" /></a>
+
+          <div class="col-md-4">
+
+            <!-- Start of Connect With Me Area -->
+            <section id="connect-with-me-area">
+              <div class="connect-with-me-content">
+                <h1 class="connect-with-me-header">Connect With Me</h1>
+                <hr />
+                <div id="images">
+                 <a href="https://github.com/Rfranco92"> <img src="assets/images/github-128.png" alt="" class="connect-with-me-photo" /></a>
+                  <a href="https://www.linkedin.com/in/ryan-franco-b21541145/"><img src="assets/images/linkedin-128.png" alt="" class="connect-with-me-photo" /></a>
+                  <a href="https://stackoverflow.com/users/8431104/ryan-franco"><img src="assets/images/stackoverflow-128.png" alt="" class="connect-with-me-photo" /></a>
+                </div>
+              </div>
+            </section>
+
+            <!-- End of the Connect With Me Area -->
           </div>
-        </div>
+        </section>
       </div>
     </div>
-  </div>  
-</div>
   <nav class="navbar-fixed-bottom">
-    <div class="container-fluid">
-    <div class="col-xs-6 col-xs-offset-5">
-        Copyright &copy; 2017 Ryan Franco
-    </div>
-    </div>
-  </nav>
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright 2017 Ryan Franco
+      </p>
+    </nav>
+
+      <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 </html>
